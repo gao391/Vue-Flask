@@ -1,12 +1,17 @@
+
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
+
+
+<script>
+import Finance from './views/Finance.vue'
+  export default {
+    comments:Finance
+  }
+</script>
 
 <style>
 #app {
